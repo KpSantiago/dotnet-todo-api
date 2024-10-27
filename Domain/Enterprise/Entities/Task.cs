@@ -1,15 +1,8 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Newtonsoft.Json;
 
 namespace api_dotnet.Domain.Enterprise.Entities;
-
-public class TaskProps
-{
-    public string Title { get; set; }
-    public bool Checked { get; set; }
-    public string ListId { get; set; }
-}
-
 
 public class Task
 {
@@ -23,20 +16,15 @@ public class Task
 
     [ForeignKey("Lists")]
     public string ListId { get; set; }
+
+    [JsonIgnore]
     public List List { get; set; }
 
     public DateTime CreatedAt { get; set; }
 
-    public Task(TaskProps props, string id)
+    public Task(string id = null)
     {
         Id = id ?? Guid.NewGuid().ToString();
-        Title = props.Title;
-        Checked = props.Checked;
         CreatedAt = DateTime.Now;
-    }
-
-    public static Task Create(TaskProps props, string id = null)
-    {
-        return new Task(props, id);
     }
 }

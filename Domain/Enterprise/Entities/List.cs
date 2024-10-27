@@ -5,11 +5,6 @@ using Microsoft.EntityFrameworkCore.Storage;
 
 namespace api_dotnet.Domain.Enterprise.Entities;
 
-public class ListProps
-{
-    public string Title { get; set; }
-}
-
 public class List
 {
     [Key]
