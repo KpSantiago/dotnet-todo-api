@@ -13,3 +13,6 @@ bin
 # Configuration files
 appsettings.json
 appsettings.Development.json
+
+#InMemory Files
+Domain/Application/Repository/InMemory
