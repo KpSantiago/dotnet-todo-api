@@ -1,7 +1,5 @@
 # Todo-List API
 
-<hr>
-
 ### Descrição
 
 API de uma todo list simples para testar minhas hablidades em `.NET`, `ASP.NET` e `Entity Framework`
@@ -21,8 +19,6 @@ API de uma todo list simples para testar minhas hablidades em `.NET`, `ASP.NET` 
 - Clean Architecture
 
 ## Rotas
-
-<hr>
 
 #### Lists
 
