@@ -38,3 +38,8 @@ API de uma todo list simples para testar minhas hablidades em `.NET`, `ASP.NET` 
 | `GET`    | /tasks             | Resgata todas as tasks de tarefas | #          |
 | `PATCH`  | /tasks/{id}/update | Edita uma determinada tarefa      | id: string |
 | `DELETE` | /tasks/{id}/delete | Remove uma determinada tarefa     | id: string |
+
+
+### Swagger 
+
+<img src="./images/swagger.png">
