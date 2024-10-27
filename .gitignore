@@ -5,42 +5,11 @@ logs/
 # Visual Studio
 .vscode/
 .vs/
-*.suo
-*.user
-*.userosscache
-*.sln.docstates
 
 # Build artefacts
-bin/
-obj/
-out/
-*.dll
-*.exe
-*.pdb
-*.cache
-*.ilk
-*.log
-*.log2
-*.log3
-*.bak
-*.swp
-*.orig
-*.gz
-*.zip
-*.dmp
-
-# OS-generated files
-.DS_Store
-Thumbs.db
+obj
+bin
 
 # Configuration files
 appsettings.json
 appsettings.Development.json
-
-# Database
-*.mdf
-*.ldf
-
-# Package directories
-node_modules/
-wwwroot/lib/
