@@ -1,6 +1,6 @@
 using api_dotnet.Domain.Adapters.DTOs;
 using api_dotnet.Domain.Application.Repositories;
-using api_dotnet.Domain.Application.UseCases.Errors;
+using api_dotnet.Domain.Application.UseCases.Exceptions;
 using Task = api_dotnet.Domain.Enterprise.Entities.Task;
 
 namespace api_dotnet.Domain.Application.UseCases.Tasks;

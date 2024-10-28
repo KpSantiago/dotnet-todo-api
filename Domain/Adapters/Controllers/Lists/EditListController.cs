@@ -1,5 +1,5 @@
 using api_dotnet.Domain.Adapters.DTOs;
-using api_dotnet.Domain.Application.UseCases.Errors;
+using api_dotnet.Domain.Application.UseCases.Exceptions;
 using api_dotnet.Domain.Application.UseCases.Factories;
 using api_dotnet.Domain.Infrastructure.Context;
 using Microsoft.AspNetCore.Mvc;

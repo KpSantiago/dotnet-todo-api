@@ -1,5 +1,5 @@
 using api_dotnet.Domain.Application.Repositories;
-using api_dotnet.Domain.Application.UseCases.Errors;
+using api_dotnet.Domain.Application.UseCases.Exceptions;
 
 namespace api_dotnet.Domain.Application.UseCases.Lists;
 
@@ -16,7 +16,7 @@ public class DeleteListUseCase
     {
         var list = ListsRepository.FindById(id);
 
-        if(list == null)
+        if (list == null)
         {
             throw new RegisterNotFoundException("A lista não foi encontrada.");
         }

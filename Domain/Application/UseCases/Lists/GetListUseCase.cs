@@ -1,7 +1,7 @@
 #nullable enable
 
 using api_dotnet.Domain.Application.Repositories;
-using api_dotnet.Domain.Application.UseCases.Errors;
+using api_dotnet.Domain.Application.UseCases.Exceptions;
 using api_dotnet.Domain.Enterprise.Entities;
 
 namespace api_dotnet.Domain.Application.UseCases.Lists;
@@ -19,12 +19,13 @@ public class GetListUseCase
     {
         var list = ListsRepository.FindById(id);
 
-         if(list == null)
+        if (list == null)
         {
             throw new RegisterNotFoundException("A lista não foi encontrada.");
         }
 
-        return new List() {
+        return new List()
+        {
             Id = list.Id,
             Title = list.Title,
             CreatedAt = list.CreatedAt,

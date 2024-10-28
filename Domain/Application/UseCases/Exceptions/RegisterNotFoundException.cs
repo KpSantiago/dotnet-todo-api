@@ -1,4 +1,4 @@
-namespace api_dotnet.Domain.Application.UseCases.Errors;
+namespace api_dotnet.Domain.Application.UseCases.Exceptions;
 
 public class RegisterNotFoundException : Exception
 {

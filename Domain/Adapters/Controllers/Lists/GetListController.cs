@@ -1,4 +1,4 @@
-using api_dotnet.Domain.Application.UseCases.Errors;
+using api_dotnet.Domain.Application.UseCases.Exceptions;
 using api_dotnet.Domain.Application.UseCases.Factories;
 using api_dotnet.Domain.Enterprise.Entities;
 using api_dotnet.Domain.Infrastructure.Context;

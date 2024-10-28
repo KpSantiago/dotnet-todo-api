@@ -1,5 +1,5 @@
 using api_dotnet.Domain.Application.Repositories;
-using api_dotnet.Domain.Application.UseCases.Errors;
+using api_dotnet.Domain.Application.UseCases.Exceptions;
 
 namespace api_dotnet.Domain.Application.UseCases.Tasks;
 
@@ -16,7 +16,7 @@ public class DeleteTaskUseCase
     {
         var task = TasksRepository.FindById(id);
 
-        if(task == null)
+        if (task == null)
         {
             throw new RegisterNotFoundException("A taska não foi encontrada.");
         }
