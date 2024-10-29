@@ -18,7 +18,7 @@ public class EditTaskController : ControllerBase
         _context = context;
     }
 
-    [HttpPatch]
+    [HttpPut]
     public IActionResult Handle(EditTaskDTO data, string id)
     {
         try
